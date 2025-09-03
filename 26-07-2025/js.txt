@@ -1,0 +1,5 @@
+JAVA SCRIPT K LIYE script.js  file bnegi (.js ) hmara extension hai.
+script.js ko bhi link krna pdega html ke saath 
+usko link karna pdega ese <script src="script.js"></script> 
+src=" " name of the file with extension .js
+Nahi toh <script> __________  </script> use kr skte hai yeah body tag k khatam hone se phele lag jaana chahiye 
