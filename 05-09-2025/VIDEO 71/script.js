@@ -79,4 +79,4 @@ console.log(element.nodeName);
   //this gets stored in dataset and can be accessed 
   //using element.dataset all these attributes are stored in key value pairs like objects 
   node.dataset
-  //returns 
+  //returns DOMStringMap {createdby: 'ayush'} createdby is key and value is ayush 
