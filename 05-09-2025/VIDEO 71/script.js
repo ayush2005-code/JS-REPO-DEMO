@@ -1,6 +1,8 @@
 // Always prefer query selectorAll (Node list) instead of get element by id or class cause of its flexibility it has directly access forEach() (Node list)
 // where when we use get element by id or class we need to create using Array.from THEN WE USE foreach() (HTML Collection) 
 
+
+
  let element = document.querySelector(".container");
  console.log(element);
  //1)inner HTML 
@@ -80,3 +82,21 @@ console.log(element.nodeName);
   //using element.dataset all these attributes are stored in key value pairs like objects 
   node.dataset
   //returns DOMStringMap {createdby: 'ayush'} createdby is key and value is ayush 
+
+  //Insertion Methods in JS
+
+  //creating an div dynamically with some content in it
+ let  div=document.createElement("div");
+    div.className="dynamic-class";
+    div.innerHTML="newly or <b>dynamically created</b>";
+    //till this the element or the dynamic class gets created which appears on when the site is running
+
+    //now we need to insert it somewhere so we select the class container
+
+    let container=document.querySelector(".container");
+    //then we use properties like append to make the dynamic-clsss details at last of the container
+    container.append(div);//(in bracket we write the name of the element which needs to be placed)
+    //similarly we use prepend to show the content at the top of the container inside it.
+    //similarly we use before to show the content before the whole container.
+    //similarly we use after to show the content after the whole container.
+    //similarly we use replaceWith(name of the class replacing) replaces the whole container if used container.replaceWith(div). 
