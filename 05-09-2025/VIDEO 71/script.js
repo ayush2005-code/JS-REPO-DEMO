@@ -99,4 +99,57 @@ console.log(element.nodeName);
     //similarly we use prepend to show the content at the top of the container inside it.
     //similarly we use before to show the content before the whole container.
     //similarly we use after to show the content after the whole container.
-    //similarly we use replaceWith(name of the class replacing) replaces the whole container if used container.replaceWith(div). 
+    //similarly we use replaceWith(name of the class replacing) replaces the whole container if used container.replaceWith(div).
+    
+    //inserting adjacent elements or adjacenthtml,text,elements
+    //for inserting elements use insertajacentelements.
+     //for inserting elements use insertajacenttext.
+      //for inserting elements use insertajacenthtml.
+
+
+    container.insertAdjacentHTML("beforebegin","inserted before container");
+    //used before begin for for showing the content before the container
+
+    container.insertAdjacentHTML("beforeend","inserted before the last line of container");
+    //used before begin for for showing the content before the container
+
+
+    //similarly used after begin whihch shows the content after it begins the container (means inside the container the first element will be the inserted html)
+    container.insertAdjacentHTML("afterbegin","inserted after container begin");
+
+    //similarly used after end whihch shows the content after it ends the container (means inside the container the first element will be the inserted html)
+    container.insertAdjacentHTML("afterend","inserted after container end");
+
+
+    //removal of node 
+//element.remove()
+
+
+//ClassList
+
+document.querySelector(".container");
+//output at browser console
+
+//properties or attributes in ClassList
+//add
+document.querySelector(".container").classList.add("new-class");
+//adds new class in div with container 
+
+//remove
+document.querySelector(".container").classList.remove("new-class");
+//removes new class in div associated with container 
+
+//toggle  does opposite if class present then removes if not present then adds
+document.querySelector(".container").classList.toggle("red");
+//removes red in div associated with container 
+document.querySelector(".container").classList.toggle("red");
+//adds red in div associated with container 
+
+
+
+//ClassName
+
+document.querySelector(".container").className5
+//output at browser console 
+//'container, red , bg-green'
+
